@@ -5,15 +5,17 @@ const RootLayout = () => {
     return (
         <div className="rootLayout">
             <header>
-                <Link to="/">
+                <Link to="/" className="logo">
                     <img src="/logo.png" alt="" />
                     <span>Just Chat</span>
                 </Link>
+                <div className="user">User</div>
             </header>
             <main>
                 <Outlet />
             </main>
         </div>
-    )
-}
+    );
+};
+
 export default RootLayout;
