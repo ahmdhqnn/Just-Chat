@@ -5,18 +5,17 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePage from './routes/home/HomePage.jsx';
 import DashboardPage from './routes/dashboard/dashboardPage.jsx';
 import ChatPage from './routes/chat/Chatpage.jsx';
+import RootLayout from './laylouts/RootLayout.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <HomePage />
-  },
-  {
-    path: "/dashboard",
+    element: <RootLayout />,
     children: [
-      { path: "/dashboard", element: <DashboardPage /> },
-      { path: "/dashboard/chats/:id", element: <ChatPage /> }
-    ]
+      {
+        path: '/',
+        element: <HomePage />,
+      },
+    ],
   },
 ]);
 
