@@ -42,10 +42,19 @@
             width: 24px;
             height: 24px;
         }
-        .text {
+        .texts {
             display: flex;
             flex-direction: column;
 
+            span {
+                &:first-child {
+                    font-weight: 600;
+                }
+
+                &:last-child {
+                    color: #888;
+                }
+            }
         }
     }
 }
