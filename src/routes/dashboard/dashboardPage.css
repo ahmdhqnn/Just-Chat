@@ -23,8 +23,17 @@
                 width: 64px;
                 height: 64px;
             }
+
+            h1 {
+                font-size: 64px;
+                background: Linear-gradient(to right, #217bfe, #e55571);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
         }
     }
+
     .formContainer {
         margin-top: auto;
 
