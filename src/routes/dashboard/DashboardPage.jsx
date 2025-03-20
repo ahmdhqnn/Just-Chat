@@ -6,7 +6,11 @@ const DashboardPage = () => {
       <div className="texts">
         <div className="logo">
           <img src="/logo.png" alt="" />
+<<<<<<< HEAD
           <h1>Just chat</h1>
+=======
+          <h1>LAMA AI</h1>
+>>>>>>> 1c8625519344163094c51a545ed933e5a5a07ac8
         </div>
         <div className="options">
           <div className="option">
